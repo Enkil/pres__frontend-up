@@ -417,17 +417,22 @@
     </div></section>
 
     <!-- Git: Conflict -->
-    <section class="slide"><div>
+    <section class="slide" id="Conflict"><div>
+        <style>
+            #Conflict code {
+                font-size: 16px;
+            }
+        </style>
         <h2>Git: Конфликты слияния</h2>
         <p>Конфликт будет, когда в разных ветках изменены одинаковые файлы</p>
-        <code>
-            $ git checkout style <br/>
-            Switched to branch 'style' <br/>
-            $ git merge master <br/>
-            Auto-merging lib/hello.html <br/>
-            CONFLICT (content): Merge conflict in lib/hello.html <br/>
+        <pre><code>
+            $ git checkout style
+            Switched to branch 'style'
+            $ git merge master
+            Auto-merging lib/hello.html
+            CONFLICT (content): Merge conflict in lib/hello.html
             Automatic merge failed; fix conflicts and then commit the result.
-        </code>
+        </code></pre>
     </div></section>
 
     <!-- Git: Conflict 2 -->
